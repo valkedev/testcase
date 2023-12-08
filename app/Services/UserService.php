@@ -28,6 +28,7 @@ class UserService
 
     /**
      * Show current user
+     * @return View
      */
     public function show(): View
     {
@@ -38,6 +39,7 @@ class UserService
 
     /**
      * Display user listing
+     * @return View
      */
     public function index(): View
     {
@@ -51,6 +53,7 @@ class UserService
     /**
      * Create a new user.
      * @param CreateUserRequest $request
+     * @return RedirectResponse
      */
     public function store(CreateUserRequest $request): RedirectResponse
     {
@@ -78,6 +81,7 @@ class UserService
     /**
      * Update the given user.
      * @param UpdateUserRequest $request
+     * @return RedirectResponse
      */
     public function update(UpdateUserRequest $request): RedirectResponse
     {
@@ -103,6 +107,7 @@ class UserService
 
     /**
      * Delete the given user.
+     * @return RedirectResponse
      */
     public function destroy(): RedirectResponse
     {
@@ -126,6 +131,7 @@ class UserService
 
     /**
      * Show the form for editing the user
+     * @return View
      */
     public function edit(): View
     {
@@ -136,6 +142,7 @@ class UserService
 
     /**
      * Show the form for creating a new user
+     * @return View
      */
     public function create(): View
     {
