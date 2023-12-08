@@ -13,8 +13,6 @@ class UserTest extends TestCase
 {
     use DatabaseTransactions;
 
-    private User $user;
-
     /**
      * Create user test.
      */
