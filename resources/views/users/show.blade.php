@@ -1,5 +1,5 @@
 <x-layouts.app>
-    <x-breadcrumbs :links="[['href' => route('users.index'), 'title' => 'Пользователи'],['href' => route('users.show', ['user' => $user]), 'title' => $user->name],]"/>
+    <x-breadcrumbs :links="[['href' => route('users.index'), 'title' => __('app.users.list')],['href' => route('users.show', ['user' => $user]), 'title' => $user->name],]"/>
     <x-alerts />
     <x-card title="Список пользователей">
         <div class="px-4 sm:px-6 lg:px-8">

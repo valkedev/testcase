@@ -1,5 +1,5 @@
 <x-layouts.app>
-    <x-breadcrumbs :links="[['href' => route('users.index'), 'title' => 'Пользователи'],['href' => route('users.show', ['user' => $user]), 'title' => $user->name],['href' => route('users.edit', ['user' => $user]), 'title' => __('app.users.edit')]]"/>
+    <x-breadcrumbs :links="[['href' => route('users.index'), 'title' => __('app.users.list')],['href' => route('users.show', ['user' => $user]), 'title' => $user->name],['href' => route('users.edit', ['user' => $user]), 'title' => __('app.users.edit')]]"/>
     <x-alerts />
     <form action="{{ route('users.show', ['user' => $user]) }}" method="post">
         @csrf
